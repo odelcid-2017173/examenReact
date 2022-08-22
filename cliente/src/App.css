@@ -21,11 +21,24 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(80, 25, 25);
+}
+
+.App{
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.error {
+  color: red
+}
+
+.form-control {
+  opacity: 0.6;
+  border-radius: 10px;
 }
 
 @keyframes App-logo-spin {

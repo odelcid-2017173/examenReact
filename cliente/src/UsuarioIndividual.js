@@ -24,18 +24,20 @@ function UsuarioIndividual({usuario}){
            <table class="table">
   <thead>
     <tr>
-      <th scope="col">Id</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Cumpleaños</th>
+      <th scope="col">Genero de Poesia</th>
+      <th scope="col">carrera</th>
+      <th scope="col">inscripcion</th>
     </tr>
   </thead>
   <tbody>
     <tr>   
-      <td>{usuario.idusuario}</td>
       <td>{usuario.nombre}</td>
-      <td>@{usuario.email}</td>
-      <td>@{usuario.telefono}</td>
+      <td>{usuario.cumpleaños}</td>
+      <td>{usuario.results}</td>
+      <td>{usuario.carrera}</td>
+      <td>{usuario.inscripcion}</td>
     </tr>   
   </tbody>
 </table>             

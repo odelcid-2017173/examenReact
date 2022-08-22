@@ -12,17 +12,14 @@ const schemaUsuario = new schema({
     idusuario:String,
     genero: String,
     cumpleaños: String,
+    carrera: String,
+    inscripcion: Date,
 })
 
 const ModeloUsuario = mongoose.model('usuarios', schemaUsuario);
 
 module.exports = router 
 
-/* Ruta de ejemplos
-router.get('/ejemplo', (req, res)=> {
-    res.end('Saludo carga desde ruta ejemplo');
-})
-*/
 //Agregar usuarios
 router.post('/agregarusuario', (req, res)=> {
     const nuevousuario = new ModeloUsuario({
@@ -33,10 +30,12 @@ router.post('/agregarusuario', (req, res)=> {
         idusuario:req.body.idusuario,
         genero: req.body.genero,
         cumpleaños: req.body.cumpleaños,
+        carrera: req.body.carrera,
+        inscripcion: req.body.inscripcion, 
     })
     nuevousuario.save(function(err){
         if (!err){
-            res.send('Usuario agregado correctamente')
+            res.send('Usuario agregado correctamente' + nuevousuario)
         }else{
             res.send(err)
         }
