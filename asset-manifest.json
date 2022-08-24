@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/examenReact/ListaUsuarios/static/css/main.a73646fb.css",
-    "main.js": "/examenReact/ListaUsuarios/static/js/main.a49bb668.js",
-    "index.html": "/examenReact/ListaUsuarios/index.html",
-    "main.a73646fb.css.map": "/examenReact/ListaUsuarios/static/css/main.a73646fb.css.map",
-    "main.a49bb668.js.map": "/examenReact/ListaUsuarios/static/js/main.a49bb668.js.map"
+    "main.css": "/examenReact/static/css/main.a73646fb.css",
+    "main.js": "/examenReact/static/js/main.a49bb668.js",
+    "index.html": "/examenReact/index.html",
+    "main.a73646fb.css.map": "/examenReact/static/css/main.a73646fb.css.map",
+    "main.a49bb668.js.map": "/examenReact/static/js/main.a49bb668.js.map"
   },
   "entrypoints": [
     "static/css/main.a73646fb.css",
