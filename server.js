@@ -24,6 +24,8 @@ app.get('/', (req,res)=>{
 })
 //Configurar server básico
 
-app.listen(4000, function(){
-    console.log('El Servidor Node gcruzrios está corriendo correctamente');
+const PORT = process.env.PORT || 4000
+
+app.listen(PORT, function(){
+    console.log('El Servidor Node está corriendo correctamente', PORT);
 })

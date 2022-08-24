@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import {useNavigate } from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import './App.css';
+
 
 function UsuarioIndividual({usuario}){
 

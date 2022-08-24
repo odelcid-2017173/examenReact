@@ -46,6 +46,7 @@
     ]
   },
   "proxy": "http://localhost:4000/",
+  "secure": false,
   "devDependencies": {
     "gh-pages": "^4.0.0"
   }
