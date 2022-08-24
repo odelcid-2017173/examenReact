@@ -39,8 +39,8 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<ListaUsuarios/>} exact></Route>
-          <Route path='/agregarusuario' element={<AgregarUsuario/>} exact></Route>
+          <Route path='/' element={<AgregarUsuario/>} exact></Route>
+          <Route path='/ListaUsuarios' element={<ListaUsuarios/>} exact></Route>
         </Routes>
       </BrowserRouter>
 
