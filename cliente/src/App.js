@@ -1,7 +1,7 @@
 import './App.css';
 import ListaUsuarios from './ListaUsuarios';
 import AgregarUsuario from './AgregarUsuario';
-import {BrowserRouter, Routes, Route } from 'react-router-dom';
+import {HashRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
 
@@ -35,12 +35,12 @@ function App() {
         
         
 
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/listaUsuarios' element={<ListaUsuarios/>} exact></Route>
           <Route path='/agregarusuario' element={<AgregarUsuario/>} ></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
       
           
