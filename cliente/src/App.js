@@ -35,7 +35,7 @@ function App() {
         
         
 
-      <HashRouter>
+      <HashRouter baseline="/" >
         <Routes>
           <Route path='/listaUsuarios' element={<ListaUsuarios/>} exact></Route>
           <Route path='/agregarusuario' element={<AgregarUsuario/>} ></Route>
