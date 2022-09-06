@@ -18,14 +18,14 @@ app.get('/', (req,res)=>{
     res.end('Bienvenidos al servidor Backend Node.js Corriendo...')
 })
 
-app.listen(4000, function(){
+/*app.listen(4000, function(){
     console.log('El Servidor Node está corriendo correctamente');
-})
+})*/
 
-/* 
+
 const PORT = process.env.PORT || 4000
 
 app.listen(PORT, function(){
     console.log('El Servidor Node está corriendo correctamente', PORT);
 })
-*/ 
+ 
