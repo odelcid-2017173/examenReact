@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/pruebacrudForm');
+mongoose.connect('mongodb+srv://oscar:123@cluster0.yc81wlp.mongodb.net/Formulario?retryWrites=true&w=majority');
 
 const objetobd = mongoose.connection
 

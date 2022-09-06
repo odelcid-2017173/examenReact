@@ -1,9 +1,11 @@
 import './App.css';
 import ListaUsuarios from './ListaUsuarios';
 import AgregarUsuario from './AgregarUsuario';
-import {HashRouter, Routes, Route } from 'react-router-dom';
+import {HashRouter, Routes, Route, useNavigate } from 'react-router-dom';
 
 function App() {
+
+  const navigation = useNavigate()
 
   
   return (
@@ -19,10 +21,10 @@ function App() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="listaUsuarios">Listado de Usuarios</a>
+                  <a className="nav-link active" aria-current="page" onClick={()=> navigation('listaUsuarios')}>Listado de Usuarios</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="agregarusuario">Agregar Usuario</a>
+                  <button className="nav-link" onClick={()=> navigation('agregarusuario')} >Agregar Usuario</button>
                 </li>
                 
                 
@@ -35,12 +37,12 @@ function App() {
         
         
 
-      <HashRouter baseline="/" >
+
         <Routes>
-          <Route path='/listaUsuarios' element={<ListaUsuarios/>} exact></Route>
-          <Route path='/agregarusuario' element={<AgregarUsuario/>} ></Route>
+          <Route path='listaUsuarios' element={<ListaUsuarios/>} exact></Route>
+          <Route path='agregarusuario' element={<AgregarUsuario/>} ></Route>
         </Routes>
-      </HashRouter>
+
 
       
           
