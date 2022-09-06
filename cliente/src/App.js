@@ -1,7 +1,7 @@
 import './App.css';
 import ListaUsuarios from './ListaUsuarios';
 import AgregarUsuario from './AgregarUsuario';
-import {HashRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import {Routes, Route, useNavigate } from 'react-router-dom';
 
 function App() {
 
@@ -35,9 +35,6 @@ function App() {
           </div> 
         </nav>
         
-        
-
-
         <Routes>
           <Route path='listaUsuarios' element={<ListaUsuarios/>} exact></Route>
           <Route path='agregarusuario' element={<AgregarUsuario/>} ></Route>

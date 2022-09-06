@@ -8,7 +8,6 @@ import './App.css';
 function UsuarioIndividual({usuario}){
 
 
-    const navegar = useNavigate()
 
 
     //Para animacion scroll al bajar
