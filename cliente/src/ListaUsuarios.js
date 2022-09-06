@@ -7,7 +7,7 @@ function ListaUsuarios(){
     const [datausuarios, setDatausuarios] = useState([])
 
     useEffect(() => {
-        axios.get('api/usuario/obtenerusuarios').then(res =>{
+        axios.get('https://primer-servidor-1.herokuapp.com/api/usuario/obtenerusuarios').then(res =>{
             console.log(res.data)
             setDatausuarios(res.data)
         }).catch(err => {

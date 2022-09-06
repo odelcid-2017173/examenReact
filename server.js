@@ -1,5 +1,7 @@
 const express = require('express');
 
+const cors = require('cors')
+
 const app = express();
 
 const archivoBD = require('./conexion')
@@ -9,6 +11,7 @@ const rutausuario = require('./rutas/usuario');
 
 const bodyParser = require('body-parser')
 app.use(bodyParser.json())
+app.use(cors())
 app.use(bodyParser.urlencoded({extended:'true'}))
 
 

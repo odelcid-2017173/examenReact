@@ -37,7 +37,7 @@ function App() {
         
         <Routes>
           <Route path='listaUsuarios' element={<ListaUsuarios/>} exact></Route>
-          <Route path='agregarusuario' element={<AgregarUsuario/>} ></Route>
+          <Route path='agregarusuario' element={<AgregarUsuario/>} exact ></Route>
         </Routes>
 
 

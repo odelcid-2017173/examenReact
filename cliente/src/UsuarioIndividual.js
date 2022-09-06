@@ -7,9 +7,7 @@ import './App.css';
 
 function UsuarioIndividual({usuario}){
 
-
-
-
+  const navigate = useNavigate()
     //Para animacion scroll al bajar
 
     useEffect(() => {
@@ -24,6 +22,7 @@ function UsuarioIndividual({usuario}){
 
            <table class="table">
   <thead>
+
     <tr>
       <th scope="col">Nombre</th>
       <th scope="col">Cumpleaños</th>

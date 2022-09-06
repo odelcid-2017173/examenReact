@@ -37,7 +37,7 @@ function AgregarUsuario(){
 
         }
         console.log(usuario)
-        axios.post('api/usuario/agregarusuario', usuario)
+        axios.post('https://primer-servidor-1.herokuapp.com/api/usuario/agregarusuario', usuario)
         .then(res => {
             //alert(res.data)
             Swal.fire('resultados: ' + results )
